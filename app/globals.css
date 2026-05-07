@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-bg-card: var(--bg-card);
+  --color-surface: var(--surface);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-text: var(--accent-text);
+  --color-border: var(--border);
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-dmsans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  /* oxblood-burgundy palette: rich oxblood primary + cream background + brass/gold accent */
+  --bg: oklch(97% 0.012 85);           /* warm cream */
+  --bg-card: oklch(95% 0.014 80);      /* slightly deeper cream */
+  --surface: oklch(38% 0.090 18);      /* deep oxblood/burgundy */
+  --surface-dark: oklch(22% 0.045 18); /* near-black burgundy-tinted */
+  --text-primary: oklch(20% 0.035 20); /* dark ink, warm-tinted */
+  --text-secondary: oklch(38% 0.030 25);
+  --text-muted: oklch(55% 0.025 25);
+  --text-on-surface: oklch(96% 0.014 80); /* cream text on oxblood */
+  --accent: oklch(68% 0.140 58);       /* brass/gold */
+  --accent-hover: oklch(74% 0.150 58);
+  --accent-text: oklch(20% 0.030 50);  /* dark on brass */
+  --border: oklch(88% 0.020 75);
+  --border-dark: oklch(45% 0.060 18);
+}
+
+html {
+  background: var(--bg) !important;
+  color: var(--text-primary);
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg) !important;
+  color: var(--text-primary);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Image Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .marquee-track {
+    animation: none;
+  }
 }
