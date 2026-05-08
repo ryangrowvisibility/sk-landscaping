@@ -43,8 +43,6 @@ const testimonials = [
     service: "Snow Removal — Full Season",
     quote:
       "The team handled snow removal for our home for the entire season at a very reasonable price. Great skill and excellent service throughout. Highly recommended to anyone looking for dependable, professional service.",
-    photo: "/images/photo1.jpg",
-    photoAlt: "SK Landscaping seasonal work",
   },
   {
     name: "Reet A.",
@@ -52,8 +50,6 @@ const testimonials = [
     service: "Snow Removal — Winter",
     quote:
       "Great service all winter long. Always on time and very professional. The crew showed up without being reminded and cleared everything properly every time. Will continue using them next season.",
-    photo: "/images/photo1.jpg",
-    photoAlt: "SK Landscaping outdoor property",
   },
   {
     name: "Verified Google Reviewer",
@@ -61,8 +57,6 @@ const testimonials = [
     service: "Backyard Landscaping",
     quote:
       "The backyard went from messy and overgrown to absolutely stunning. Could not believe the transformation. Highly recommend SK Landscaping to anyone who wants real results from a team that shows up and does the work.",
-    photo: "/images/photo1.jpg",
-    photoAlt: "SK Landscaping backyard transformation",
   },
 ];
 
@@ -327,17 +321,6 @@ export default function Page() {
                   className="flex flex-col"
                   style={{ background: "oklch(33% 0.070 18)", border: "1px solid oklch(45% 0.060 18)" }}
                 >
-                  {/* Photo */}
-                  <div className="relative overflow-hidden" style={{ height: "200px" }}>
-                    <Image
-                      src={t.photo}
-                      alt={t.photoAlt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      loading="lazy"
-                    />
-                  </div>
                   {/* Content */}
                   <div className="p-6 flex flex-col gap-4 flex-1">
                     <div className="flex gap-1" aria-label="5 stars">
