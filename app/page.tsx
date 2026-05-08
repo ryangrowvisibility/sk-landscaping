@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import ImageMarquee from "./components/ImageMarquee";
 import AccordionFAQ from "./components/AccordionFAQ";
 
-const heroPhoto = "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGNYvvAW-2UKth3SHxRMQc99xWc2GX8s397v3zP8uUZxa8R7A2Sn9PNgxJVTi1raESet9p_ZeE-n_O7hrq8p94hB9kz_O8AOIc5FdAVPtMtZHz-XXttVc8HBnvxG8nhxYWElwtbSOMJ5xEC=w800-h600-k-no";
+const heroPhoto = "/images/photo1.jpg";
 
 const services = [
   {
@@ -43,7 +43,7 @@ const testimonials = [
     service: "Snow Removal — Full Season",
     quote:
       "The team handled snow removal for our home for the entire season at a very reasonable price. Great skill and excellent service throughout. Highly recommended to anyone looking for dependable, professional service.",
-    photo: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHvcDgUm8x2s3HJpXGSFkN3Zo9xxW_Xc5yZGdOvmhilIE8hhmHbp-Zwh5l5ljNv9uuESi-rM4pzIFIuAzA4WcvbgWO2QVjfLjcorWkMFTs3pczqtZ9svoqpzVjcv5Nnr2K1lolEOlXNGUUM4c=w800-h600-k-no",
+    photo: "/images/photo1.jpg",
     photoAlt: "SK Landscaping seasonal work",
   },
   {
@@ -52,7 +52,7 @@ const testimonials = [
     service: "Snow Removal — Winter",
     quote:
       "Great service all winter long. Always on time and very professional. The crew showed up without being reminded and cleared everything properly every time. Will continue using them next season.",
-    photo: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF70FIFGTC-1QSUuB_KHzi65eC9VzwyItIUlRyfImz9mQnQbYCVmc6kLlTNgLwQsDPJKL9kSCqlvqtZwIljOE_rHqFtuv4XmWsIuagtUQ4yB4Fvmd8QwL_Qjubcny_Mwzou3PS4abJ8l0_0=w800-h600-k-no",
+    photo: "/images/photo1.jpg",
     photoAlt: "SK Landscaping outdoor property",
   },
   {
@@ -61,7 +61,7 @@ const testimonials = [
     service: "Backyard Landscaping",
     quote:
       "The backyard went from messy and overgrown to absolutely stunning. Could not believe the transformation. Highly recommend SK Landscaping to anyone who wants real results from a team that shows up and does the work.",
-    photo: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEynmcW4CYR-xmdK6UqmXjO2E6gveLGjH_xGrIwVZb4LsuCheuhyPp95t7SeaFs3PIwQVTmrYiA1_i8TLEttx0K48D8iFIlC2E_w-QqkbiwNLLiJB84lphPUcFjLZFPmxgfxobj=w800-h600-k-no",
+    photo: "/images/photo1.jpg",
     photoAlt: "SK Landscaping backyard transformation",
   },
 ];
